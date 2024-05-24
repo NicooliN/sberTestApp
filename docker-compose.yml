@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  postgres:
+    container_name:  sberTestApp
+    image: postgres
+    environment:
+      - 'POSTGRES_DB=sberTestApp'
+      - 'POSTGRES_PASSWORD=secret'
+      - 'POSTGRES_USER=user'
+    ports:
+      - '5432:5432'
+
