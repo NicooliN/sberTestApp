@@ -20,4 +20,5 @@ public class OpenApiConfig {
                                 email("niko91@tpu.ru")
                                 .name("Paul")));
     }
+
 }

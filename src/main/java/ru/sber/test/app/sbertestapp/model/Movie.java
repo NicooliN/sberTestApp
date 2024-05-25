@@ -1,5 +1,7 @@
 package ru.sber.test.app.sbertestapp.model;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,6 +29,11 @@ public class Movie extends GenericModel{
     @Enumerated
     private Genre genre;
 
-    @OneToMany(mappedBy = "movie", cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE},
+            fetch = FetchType.LAZY)
+    @JoinTable(name = "orders_movies",
+            joinColumns = @JoinColumn(name = "movie_id"), foreignKey = @ForeignKey(name = "FK_MOVIES_ORDERS"),
+            inverseJoinColumns = @JoinColumn(name = "order_id"), inverseForeignKey = @ForeignKey(name = "FK_ORDERS_MOVIES"))
+
     private Set<Order> orders;
 }

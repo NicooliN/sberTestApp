@@ -1,0 +1,38 @@
+2024-05-25 17:00:45,985 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-05-25 17:00:46,001 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SberTestAppApplication using Java 17.0.6 with PID 294192 (/home/paul/School21/career/chapterOne/sberTestApp/target/classes started by paul in /home/paul/School21/career/chapterOne/sberTestApp)
+2024-05-25 17:00:46,003 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-05-25 17:00:46,024 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-25 17:00:46,024 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-25 17:00:46,485 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-25 17:00:46,486 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-25 17:00:46,503 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.sber.test.app.sbertestapp.repository.MovieRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-25 17:00:46,504 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface ru.sber.test.app.sbertestapp.repository.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-25 17:00:46,504 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 15 ms. Found 0 JDBC repository interfaces.
+2024-05-25 17:00:46,510 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-25 17:00:46,511 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25 17:00:46,525 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2024-05-25 17:00:46,870 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 9090 (http)
+2024-05-25 17:00:46,877 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9090"]
+2024-05-25 17:00:46,878 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-05-25 17:00:46,879 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-25 17:00:46,900 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-05-25 17:00:46,900 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 876 ms
+2024-05-25 17:00:46,972 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25 17:00:46,995 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-05-25 17:00:47,012 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-05-25 17:00:47,117 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25 17:00:47,132 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-05-25 17:00:47,226 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1710d2aa
+2024-05-25 17:00:47,227 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-05-25 17:00:47,242 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-25 17:00:47,750 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25 17:00:47,797 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25 17:00:48,178 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25 17:00:48,803 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-05-25 17:00:48,817 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9090"]
+2024-05-25 17:00:48,826 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 9090 (http) with context path '/api/rest'
+2024-05-25 17:00:48,835 INFO o.s.b.StartupInfoLogger [restartedMain] Started SberTestAppApplication in 2.998 seconds (process running for 3.514)
+2024-05-25 17:02:34,678 INFO o.a.j.l.DirectJDKLog [SpringApplicationShutdownHook] Stopping ProtocolHandler ["http-nio-9090"]
+2024-05-25 17:02:34,684 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25 17:02:34,687 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-25 17:02:34,690 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
